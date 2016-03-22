@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2015a">
-  <configuration build-checksum="505971671" file="C:\Projects\matlab_mldivide\matlab_mldivide.prj" location="C:\Projects\matlab_mldivide" name="matlab_mldivide" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration build-checksum="3722522743" file="C:\Projects\matlab_mldivide\matlab_mldivide.prj" location="C:\Projects\matlab_mldivide" name="matlab_mldivide" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex />
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -27,7 +27,7 @@
       <param.LaunchReport>false</param.LaunchReport>
       <param.DefaultTestFile />
       <param.MergeInstrumentationResults>false</param.MergeInstrumentationResults>
-      <param.VerificationMode>option.VerificationMode.None</param.VerificationMode>
+      <param.VerificationMode />
       <param.VerificationStatus>option.VerificationStatus.Inactive</param.VerificationStatus>
       <param.CustomSourceCode />
       <param.CustomHeaderCode />
@@ -37,7 +37,7 @@
       <param.CustomSource />
       <param.CustomLibrary />
       <param.PostCodeGenCommand />
-      <param.mex.GenCodeOnly />
+      <param.mex.GenCodeOnly>false</param.mex.GenCodeOnly>
       <param.ConstantFoldingTimeout>40000</param.ConstantFoldingTimeout>
       <param.RecursionLimit>100</param.RecursionLimit>
       <param.PreserveVariableNames>option.PreserveVariableNames.UserNames</param.PreserveVariableNames>
@@ -88,7 +88,6 @@
         <param.CustomSource />
         <param.CustomLibrary />
         <param.PostCodeGenCommand />
-        <param.mex.GenCodeOnly />
         <param.ConstantFoldingTimeout />
         <param.RecursionLimit />
         <param.PreserveVariableNames />
@@ -105,7 +104,7 @@
       </unset>
     </profile>
     <profile key="profile.c">
-      <param.grt.GenCodeOnly>true</param.grt.GenCodeOnly>
+      <param.grt.GenCodeOnly>false</param.grt.GenCodeOnly>
       <param.WorkingFolder>option.WorkingFolder.Project</param.WorkingFolder>
       <param.SpecifiedWorkingFolder />
       <param.BuildFolder>option.BuildFolder.Project</param.BuildFolder>
@@ -179,11 +178,11 @@
       <param.HardwareSizeWord.Production>32</param.HardwareSizeWord.Production>
       <param.HardwareSizePointer.Production>32</param.HardwareSizePointer.Production>
       <param.HardwareEndianness.Production>option.HardwareEndianness.Little</param.HardwareEndianness.Production>
-      <param.HardwareArithmeticRightShift.Production>false</param.HardwareArithmeticRightShift.Production>
-      <param.HardwareLongLongMode.Production>false</param.HardwareLongLongMode.Production>
+      <param.HardwareArithmeticRightShift.Production>true</param.HardwareArithmeticRightShift.Production>
+      <param.HardwareLongLongMode.Production>true</param.HardwareLongLongMode.Production>
       <param.HardwareAtomicIntegerSize.Production>option.HardwareAtomicIntegerSize.Char</param.HardwareAtomicIntegerSize.Production>
       <param.HardwareAtomicFloatSize.Production>option.HardwareAtomicFloatSize.None</param.HardwareAtomicFloatSize.Production>
-      <param.HardwareDivisionRounding.Production>option.HardwareDivisionRounding.Undefined</param.HardwareDivisionRounding.Production>
+      <param.HardwareDivisionRounding.Production>option.HardwareDivisionRounding.Zero</param.HardwareDivisionRounding.Production>
       <param.HardwareVendor.Target>Generic</param.HardwareVendor.Target>
       <param.HardwareType.Target>MATLAB Host Computer</param.HardwareType.Target>
       <param.HWDeviceType.Target />
@@ -198,11 +197,11 @@
       <param.HardwareSizeWord.Target>32</param.HardwareSizeWord.Target>
       <param.HardwareSizePointer.Target>32</param.HardwareSizePointer.Target>
       <param.HardwareEndianness.Target>option.HardwareEndianness.Little</param.HardwareEndianness.Target>
-      <param.HardwareArithmeticRightShift.Target>false</param.HardwareArithmeticRightShift.Target>
-      <param.HardwareLongLongMode.Target>false</param.HardwareLongLongMode.Target>
+      <param.HardwareArithmeticRightShift.Target>true</param.HardwareArithmeticRightShift.Target>
+      <param.HardwareLongLongMode.Target>true</param.HardwareLongLongMode.Target>
       <param.HardwareAtomicIntegerSize.Target>option.HardwareAtomicIntegerSize.Char</param.HardwareAtomicIntegerSize.Target>
       <param.HardwareAtomicFloatSize.Target>option.HardwareAtomicFloatSize.None</param.HardwareAtomicFloatSize.Target>
-      <param.HardwareDivisionRounding.Target>option.HardwareDivisionRounding.Undefined</param.HardwareDivisionRounding.Target>
+      <param.HardwareDivisionRounding.Target>option.HardwareDivisionRounding.Zero</param.HardwareDivisionRounding.Target>
       <param.Toolchain>Automatically locate an installed toolchain</param.Toolchain>
       <param.BuildConfiguration>Faster Builds</param.BuildConfiguration>
       <param.CustomToolchainOptions />
@@ -232,7 +231,6 @@
       <param.PassStructByReference>true</param.PassStructByReference>
       <param.UseECoderFeatures>true</param.UseECoderFeatures>
       <unset>
-        <param.WorkingFolder />
         <param.SpecifiedWorkingFolder />
         <param.BuildFolder />
         <param.SpecifiedBuildFolder />
@@ -241,7 +239,6 @@
         <param.PurelyIntegerCode />
         <param.SupportNonFinite />
         <param.EnableVariableSizing />
-        <param.DynamicMemoryAllocation />
         <param.DynamicMemoryAllocationThreshold />
         <param.StackUsageMax />
         <param.MultiInstanceCode />
@@ -254,16 +251,7 @@
         <param.ConvertIfToSwitch />
         <param.PreserveExternInFcnDecls />
         <param.EnableSignedLeftShifts />
-        <param.ParenthesesLevel />
         <param.MaxIdLength />
-        <param.CustomSymbolStrGlobalVar />
-        <param.CustomSymbolStrType />
-        <param.CustomSymbolStrField />
-        <param.CustomSymbolStrFcn />
-        <param.CustomSymbolStrTmpVar />
-        <param.CustomSymbolStrMacro />
-        <param.CustomSymbolStrEMXArray />
-        <param.CustomSymbolStrEMXArrayFcn />
         <param.ReservedNameArray />
         <param.EnableScreener />
         <param.Verbose />
@@ -293,40 +281,10 @@
         <param.HardwareType.Production />
         <param.HWDeviceType.Production />
         <var.instance.enabled.Production />
-        <param.HardwareSizeChar.Production />
-        <param.HardwareSizeShort.Production />
-        <param.HardwareSizeInt.Production />
-        <param.HardwareSizeLong.Production />
-        <param.HardwareSizeLongLong.Production />
-        <param.HardwareSizeFloat.Production />
-        <param.HardwareSizeDouble.Production />
-        <param.HardwareSizeWord.Production />
-        <param.HardwareSizePointer.Production />
-        <param.HardwareEndianness.Production />
-        <param.HardwareArithmeticRightShift.Production />
-        <param.HardwareLongLongMode.Production />
-        <param.HardwareAtomicIntegerSize.Production />
-        <param.HardwareAtomicFloatSize.Production />
-        <param.HardwareDivisionRounding.Production />
         <param.HardwareVendor.Target />
         <param.HardwareType.Target />
         <param.HWDeviceType.Target />
         <var.instance.enabled.Target />
-        <param.HardwareSizeChar.Target />
-        <param.HardwareSizeShort.Target />
-        <param.HardwareSizeInt.Target />
-        <param.HardwareSizeLong.Target />
-        <param.HardwareSizeLongLong.Target />
-        <param.HardwareSizeFloat.Target />
-        <param.HardwareSizeDouble.Target />
-        <param.HardwareSizeWord.Target />
-        <param.HardwareSizePointer.Target />
-        <param.HardwareEndianness.Target />
-        <param.HardwareArithmeticRightShift.Target />
-        <param.HardwareLongLongMode.Target />
-        <param.HardwareAtomicIntegerSize.Target />
-        <param.HardwareAtomicFloatSize.Target />
-        <param.HardwareDivisionRounding.Target />
         <param.Toolchain />
         <param.BuildConfiguration />
         <param.CustomToolchainOptions />
