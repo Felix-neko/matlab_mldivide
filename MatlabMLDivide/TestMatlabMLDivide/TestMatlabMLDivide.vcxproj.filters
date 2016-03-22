@@ -24,12 +24,72 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\colon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_emxAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_emxutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_initialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_terminate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\rt_nonfinite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\rtGetInf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\rtGetNaN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\codegen\lib\matlab_mldivide\rtwtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestMatlabMLDivide.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\colon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_emxAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_emxutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_initialize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\matlab_mldivide_terminate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\rt_nonfinite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\rtGetInf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\codegen\lib\matlab_mldivide\rtGetNaN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
