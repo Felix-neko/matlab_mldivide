@@ -1,12 +1,23 @@
 # -*- coding: utf-8 -*-
 
+import os, sys
+
 import ctypes
 
 import numpy as np
 
-path_to_dll = "D:/Projects/matlab_mldivide/MatlabMLDivide/x64/Debug/TestMatlabMLDivide.dll"
+# path_to_dll = "D:/Projects/matlab_mldivide/MatlabMLDivide/x64/Debug/TestMatlabMLDivide.dll"
 
+
+path_to_dll = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                           "../build/lib.win-amd64-2.7/_matlab_mldivide.pyd"))
+
+print path_to_dll
+
+# try:
 test_dll = ctypes.CDLL(path_to_dll)
+# except Exception as ex:
+#     print ex
 # test_dll.main()
 
 test_array = np.asarray(np.linspace(1 + 0.5j, 10 + 5j, 10), dtype=np.complex128)

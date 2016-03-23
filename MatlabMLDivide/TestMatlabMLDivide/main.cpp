@@ -63,3 +63,11 @@ extern "C"
 		return 0;
 	}
 }
+
+extern "C"
+{
+	void init_matlab_mldivide()
+	{
+
+	}
+}
