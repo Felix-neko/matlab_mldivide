@@ -64,9 +64,10 @@ extern "C"
 	}
 }
 
+// Just a dummy init func to make distutils somehow build it.
 extern "C"
 {
-	void init_matlab_mldivide()
+	void init_matlab_matrix_divide()
 	{
 
 	}
