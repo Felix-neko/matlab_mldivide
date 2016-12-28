@@ -12,10 +12,16 @@ using namespace std;
 
 #include "matlab_mldivide_emxAPI.h"
 
+#if defined(_WIN32)
+	#define EXPORT_OUT __declspec(dllexport)
+#else
+	#define EXPORT_OUT
+#endif
+
 
 extern "C"
 {
-	__declspec(dllexport) int test(double* test_complex_array)
+	EXPORT_OUT int test(double* test_complex_array)
 	{
 		cout << test_complex_array[0] << endl;
 		cout << test_complex_array[1] << endl;
@@ -25,7 +31,7 @@ extern "C"
 
 extern "C"
 {
-	__declspec(dllexport) int mldivide(double* a_data, int a_rows, int a_cols,
+	EXPORT_OUT int mldivide(double* a_data, int a_rows, int a_cols,
 		double* b_data, int b_rows, int b_cols, double* c_data, int c_rows, int c_cols)
 	{
 
