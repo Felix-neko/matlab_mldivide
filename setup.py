@@ -8,10 +8,10 @@ from distutils.core import setup, Extension
 
 
 matlab_source_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                    "../codegen/lib/matlab_mldivide"))
+                                    "codegen/lib/matlab_mldivide"))
 
 my_source_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                "../MatlabMLDivide/TestMatlabMLDivide"))
+                                "MatlabMLDivide/TestMatlabMLDivide"))
 
 matlab_sources = filter(lambda x: x.endswith(".cpp") or x.endswith(".c"), os.listdir(matlab_source_dir))
 matlab_sources = [os.path.join(matlab_source_dir, source) for source in matlab_sources]
