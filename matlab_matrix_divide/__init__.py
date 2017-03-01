@@ -4,7 +4,8 @@ import os
 from os.path import abspath, dirname, join
 import ctypes
 
-library_path = join(dirname(abspath(__file__)), "_matlab_matrix_divide.pyd")
+ext = '.so' if os.name == 'posix' else '.pyd'
+library_path = join(dirname(abspath(__file__)), "_matlab_matrix_divide" + ext)
 
 if not os.path.exists(library_path):
     library_path = join(abspath(os.path.join(dirname(os.path.abspath(__file__)),
