@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 
 import os
+import glob
 from os.path import abspath, dirname, join
 import ctypes
 
-ext = '.so' if os.name == 'posix' else '.pyd'
-library_path = join(dirname(abspath(__file__)), "_matlab_matrix_divide" + ext)
 
-if not os.path.exists(library_path):
-    library_path = join(abspath(os.path.join(dirname(os.path.abspath(__file__)),
-                        "../build/lib.win-amd64-2.7/matlab_matrix_divide/_matlab_matrix_divide.pyd")))
+def library_path():
+    ext = '.so' if os.name == 'posix' else '.pyd'
+    dir = join(dirname(abspath(__file__)))
+    matches = glob.glob(join(dir, '_matlab_matrix_divide*%s' % ext))
+    return matches[0]
 
-library = ctypes.CDLL(library_path)
+
+library = ctypes.CDLL(library_path())
