@@ -77,4 +77,9 @@ extern "C"
 	{
 
 	}
+
+	void PyInit__matlab_matrix_divide()
+	{
+
+	}
 }
